@@ -11,9 +11,8 @@
      <button type="button" onclick="closeme()">Close Me</button>
     
         <script type="text/javascript">
-        function closeme(){
-            var x = documen.getElementById("ok");            
-            window.top.postMessage(x.value, '*');
+        function closeme(){         
+            window.top.postMessage("closeme", '*');
         }
     </script>
 </body>
