@@ -3,14 +3,18 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <script type="text/javascript">
-        function closeme(){
-            window.top.postMessage('closeme', '*');
-        }
-    </script>
+
 </head>
 <body>
     <h1>I am child...</h1>
+     <input id="ok">
      <button type="button" onclick="closeme()">Close Me</button>
+    
+        <script type="text/javascript">
+        function closeme(){
+            var x = documen.getElementById("ok").value;            
+            window.top.postMessage(x, '*');
+        }
+    </script>
 </body>
 </html>
