@@ -7,12 +7,12 @@
 
 <body>
 
-  <h5>Receiver iframe</h5>
+  <h5>Github Receiver iframe</h5>
   <span id="res"></span>
   <script>
     window.addEventListener('message', function(event) {      
       let res = document.getElementById("res");
-      res.innerHTML = `Received ${event.data} from ${event.origin}`;
+      res.innerHTML = `Iframe Receiving message: ${event.data} from parent: ${event.origin}`;
     });
   </script>
 
