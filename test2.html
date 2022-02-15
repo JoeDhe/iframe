@@ -10,10 +10,9 @@
   Receiving iframe.
   <span id="res"></span>
   <script>
-    window.addEventListener('message', function(event) {
-      alert(`Received ${event.data} from ${event.origin}`);
+    window.addEventListener('message', function(event) {      
       let res = document.getElementById("res");
-      res.innerHTML = `${event.data}` ;
+      res.innerHTML = `Received ${event.data} from ${event.origin}`;
     });
   </script>
 
