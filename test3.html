@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+</head>
+<body>
+    <h1>I am child...</h1>
+     <button type="button" onclick="closeme()">Close Me</button>
+    
+        <script type="text/javascript">
+        function closeme(){         
+            window.top.postMessage("closeme", '*');
+        }
+    </script>
+</body>
+</html>
